@@ -1,0 +1,18 @@
+.cardImage{
+    width: 23.5%;
+}
+.cardImage img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardImage {
+      width: 49%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .cardImage {
+      width: 100%;
+    }
+  }
+  

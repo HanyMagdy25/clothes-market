@@ -1,0 +1,121 @@
+.confirm {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.confirm-title{
+    margin-bottom: 20px;
+}
+.confirm-divs {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.confirm-divs > div {
+  width: 32%;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 8px #eef1fb;
+  padding: 10px;
+  border-right: 0.5px solid var(--color-black);
+  height: 100%;
+}
+
+.confirm-two-div__right__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444444;
+  font-size: 20px;
+  margin-bottom: 18px;
+  margin-top: 15px;
+}
+.confirm-two-div__right__top a {
+  color: #d40202;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.confirm-two-div__right__bottom > div {
+  display: flex;
+  align-items: center;
+  color: #5d5d5d;
+  margin-bottom: 15px;
+}
+.confirm-two-div__right__bottom span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-green);
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  font-size: 18px;
+  /* margin-left: 8px; */
+}
+
+.confirm-second-div {
+  display: flex;
+  justify-content: space-between;
+  color: #5d5d5d;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.confirm-third-div {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-black);
+  font-size: 22px;
+  margin-top: 10px;
+}
+.confirm-two-div__left__agree {
+  display: flex;
+  align-items: center;
+  color: #5d5d5d;
+  margin-top: 25px;
+}
+.confirm-two-div__left__agree input {
+  margin-left: 5px;
+}
+.confirm-two-div__left__agree a {
+  /* margin-left: 5px; */
+  color: var(--color-black);
+}
+
+.third button {
+  width: 100%;
+  padding: 7px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.visa-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.visa-card img {
+  /* border: 1px solid #9cefc9; */
+  height: 40px;
+  object-fit: cover;
+  padding: 0 12px;
+  filter: brightness(0.1);
+}
+
+@media screen and (max-width:1000px) {
+    .confirm-divs > div {
+        width: 49%;
+        margin-bottom: 20px;
+      }
+}
+@media screen and (max-width:800px) {
+    .confirm-divs > div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+}

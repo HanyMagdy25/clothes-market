@@ -1,0 +1,125 @@
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.login-left {
+  width: 50%;
+}
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-right h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.login-right {
+  width: 50%;
+  padding: 30px 190px 0 90px;
+  margin: 60px 0;
+}
+.login-right .all-inputs-sign {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.login-right .all-inputs-sign input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-black);
+}
+.login-right .all-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.login-right .all-inputs input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-black);
+}
+.login-right .all-inputs input:nth-child(1),
+.login-right .all-inputs input:nth-child(2) {
+  width: 49%;
+}
+.login-right button {
+  width: 100%;
+  padding: 7px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login-right .sign-btn-google {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 0.1px solid var(--color-black);
+}
+.login-right .sign-btn-google img {
+  margin-right: 8px;
+}
+.or {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.login-right .agree p {
+  font-size: 12px;
+  color: #5d5d5d;
+  margin-top: 10px;
+}
+.login-right .agree p span {
+  font-size: 12px;
+  color: var(--color-black);
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+.login-right .already-have {
+  color: var(--color-black);
+  margin-top: 25px;
+}
+.login-right .already-have a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+.login-right .remember {
+  display: flex;
+  justify-content: space-between;
+  color: #5d5d5d;
+}
+.login-right .remember a {
+  color: #5d5d5d;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 800px) {
+  .login-right {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    margin: 60px 0;
+    /* z-index: 2; */
+    /* backdrop-filter: blur(20px); */
+  }
+  .login-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .login-left img{
+    width: 100%;
+    filter: blur(3px);
+  }
+}

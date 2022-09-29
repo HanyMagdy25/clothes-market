@@ -1,0 +1,60 @@
+.card {
+  width: 23.5%;
+  padding: 10px;
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 8px #00000042;
+  position: relative;
+}
+.card-three {
+  width: 32%;
+  padding: 10px;
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 8px #00000042;
+  position: relative;
+  margin-bottom: 15px;
+}
+.card .percent ,
+.card-three .percent {
+  background-color: #cb0600;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #eef1fb;
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  padding-top: 2px;
+}
+.card img ,
+.card-three img {
+  width: 100%;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  color: #5d5d5d;
+}
+.card-top h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.sale h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #8a8a8a;
+  text-align: end;
+}
+
+@media screen and (max-width: 1000px) {
+  .card,
+  .card-three {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card,
+  .card-three {
+    width: 100%;
+  }
+}

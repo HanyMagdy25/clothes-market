@@ -1,0 +1,122 @@
+.all-products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.all-products-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  /* background-color: aquamarine; */
+  flex-wrap: wrap;
+}
+.all-products-top .w-22 {
+  width: 22%;
+}
+.all-products-top .all-products-top-input-topbar {
+  width: 50%;
+  margin-bottom: 10px;
+
+  background-color: transparent;
+  padding: 0px 11px;
+  /* border-radius: 30px; */
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-black);
+  justify-content: space-between;
+}
+.all-products-top .all-products-top-input-topbar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 100%;
+  color: var(--color-black);
+  width: 100%;
+}
+.all-products-top .all-products-top-input-topbar button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-black);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+}
+
+.all-products-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.all-products-bottom .filter-div {
+  width: 23.5%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  height: 100%;
+}
+.all-products-bottom .filter-div > h2 {
+  /* font-weight: 500; */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.all-products-bottom .all-products-bottom-cards {
+  width: 76.5%;
+  /* background-color: brown; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  /* height: 50vh; */
+}
+
+.btn-filter {
+  background-color: var(--color-white);
+  border: none;
+  padding: 6px 10px;
+  font-size: 18px;
+  color: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  margin-bottom: 10px;
+}
+.btn-filter.active {
+  background-color: #444444;
+  color: var(--color-white);
+  border: none;
+}
+
+.filter-div ul {
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+.filter-div ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .all-products-top .all-products-top-input-topbar {
+    width: 100%;
+    margin-left: 0;
+    padding: 6px 10px;
+  }
+  .all-products-top .w-22 {
+    width: 49%;
+  }
+  .all-products-bottom .filter-div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .all-products-bottom .all-products-bottom-cards {
+    width: 100%;
+  }
+}
